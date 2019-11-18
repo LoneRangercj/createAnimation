@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .square{
+        position: relative;
+        display: inline-block;
+        margin: 100px 0 0 50px;
+        width: 200px;
+        height: 200px;
+        box-shadow: -8px -8px 100px -8px#ccc inset;
+    }
+    /* 所有静态小球的大小类名为.dote */
+    .dote{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    /* 黑色小球 */
+    .square-dote1{
+        top: -5px;
+        left: -5px;
+        background-color:black;
+        animation: dote1 5s ease infinite;
+    }
+    /* 红色小球 */
+    .square-dote2{
+        left: 195px;
+        top: -5px;
+        background-color:red;
+        animation: dote2 5s ease infinite;
+    }
+    /* 绿色小球 */
+    .square-dote3{
+        left: 195px;
+        top: 195px;
+        background-color:green;
+        animation: dote3 5s ease infinite;
+    }
+    /* 最爱颜色的小球 */
+    .square-dote4{
+        left: -5px;
+        top: 195px;
+        background-color:aqua;
+        animation: dote4 5s ease infinite;
+    }
+    /* 正方形-黑色小球动画过程 */
+    @keyframes dote1 {
+        0%{
+            left: -5px;
+            top: -5px;
+        }
+        25%{
+            left: 195px;
+            top: -5px;
+        }
+        50%{
+            left: 195px;
+            top: 195px;
+        }
+        75%{
+            left: -5px;
+            top: 195px;
+        }
+        100%{
+            left: -5px;
+            top: -5px;
+        }
+    }
+    /* 正方形-红色小球动画过程 */
+    @keyframes dote2 {
+        0%{
+            left: 195px;
+            top: -5px;
+        }
+        25%{
+            left: 195px;
+            top: 195px;
+        }
+        50%{
+            left: -5px;
+            top: 195px;
+        }
+        75%{
+            left: -5px;
+            top: -5px;
+        }
+        100%{
+            left: 195px;
+            top: -5px;
+        }
+    }
+    /* 正方形-绿色小球动画过程 */
+    @keyframes dote3 {
+        0%{
+            left: 195px;
+            top: 195px;
+        }
+        25%{
+            left: -5px;
+            top: 195px;
+        }
+        50%{
+            left: -5px;
+            top: -5px;
+        }
+        75%{
+            left: 195px;
+            top: -5px;
+        }
+        100%{
+            left: 195px;
+            top: 195px;
+        }
+    }
+    /* 正方形-最爱色小球动画过程 */
+    @keyframes dote4 {
+        0%{
+            left: -5px;
+            top: 195px;
+        }
+        25%{
+            left: -5px;
+            top: -5px;
+        }
+        50%{
+            left: 195px;
+            top: -5px;
+        }
+        75%{
+            left: 195px;
+            top: 195px;
+        }
+        100%{
+            left: -5px;
+            top: 195px;
+        }
+    }
+    /* 初始化圆形 */
+    .circle{
+        position: relative;
+        display: inline-block;
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        box-shadow: -8px -8px 100px -8px#ccc inset;
+        border-radius: 50%;
+    }
+    /* 黑色小球 */
+    .circle-dote1{
+        top: -5px;
+        left: 95px;
+        background-color: black;
+        /* 开启动画，下面的一样 */
+        animation: dote5 5s ease infinite;
+    }
+    /* 红色小球 */
+    .circle-dote2{
+        top: 95px;
+        left: 195px;
+        background-color: red;
+        animation: dote6 5s ease infinite;
+    }
+    /* 绿色小球 */
+    .circle-dote3{
+        top: 195px;
+        left: 95px;
+        background-color: green;
+        animation: dote7 5s ease infinite;
+    }
+    /* 最喜欢颜色的小球 */
+    .circle-dote4{
+        top: 95px;
+        left: -5px;
+        background-color: aqua;
+        animation: dote8 5s ease infinite;
+    }
+    /* 黑色小球动画过程 */
+    @keyframes dote5{
+        0%{
+            left: 95px;
+            top: -5px;
+        }
+        25%{
+            left:195px;
+            top: 95px;
+        }
+        50%{
+            left: 95px;
+            top: 195px;
+        }
+        75%{
+            left: -5px;
+            top: 95px;
+        }
+        100%{
+            left: 95px;
+            top: -5px;
+        }
+    }
+    @keyframes dote6{
+        0%{
+            left: 195px;
+            top: 95px;
+        }
+        25%{
+            left:95px;
+            top: 195px;
+        }
+        50%{
+            left: -5px;
+            top: 95px;
+        }
+        75%{
+            left: 95px;
+            top: -5px;
+        }
+        100%{
+            left: 195px;
+            top: 95px;
+        }
+    }
+    @keyframes dote7{
+        0%{
+            left:95px;
+            top: 195px;
+        }
+        25%{
+            left:-5px;
+            top: 95px;
+        }
+        50%{
+            left: 95px;
+            top: -5px;
+        }
+        75%{
+            left: 195px;
+            top: 95px;
+        }
+        100%{
+            left: 95px;
+            top: 195px;
+        }
+    }
+    @keyframes dote8{
+        0%{
+            left: -5px;
+            top: 95px;
+        }
+        25%{
+            left:95px;
+            top: -5px;
+        }
+        50%{
+            left: 195px;
+            top: 95px;
+        }
+        75%{
+            left: 95px;
+            top: 195px;
+        }
+        100%{
+            left: -5px;
+            top: 95px;
+        }
+    }
+</style>
+<body>
+    <!-- 正方形 类名为:square -->
+    <!-- dote初始化小球 类名为dote -->
+    <div class="square">
+        <!-- 黑色小球位置 类名square-dote1 -->
+        <div class="dote square-dote1"></div>
+        <!-- 红色小球位置 类名square-dote2 -->
+        <div class="dote square-dote2"></div>
+        <!-- 绿色小球位置 类名square-dote3 -->
+        <div class="dote square-dote3"></div>
+        <!-- 最喜欢颜色小球位置 类名square-dote4 -->
+        <div class="dote square-dote4"></div>
+    </div>
+    <!-- 圆形 类名为:circle -->
+    <div class="circle">
+        <!-- 黑色小球位置 类名circle-dote1 -->
+        <div class="dote circle-dote1"></div>
+        <!-- 红色小球位置 类名circle-dote2 -->
+        <div class="dote circle-dote2"></div>
+        <!-- 绿色小球位置 类名circle-dote3 -->
+        <div class="dote circle-dote3"></div>
+        <!-- 最喜欢颜色小球位置 类名circle-dote4 -->
+        <div class="dote circle-dote4"></div>
+    </div>
+</body>
+</html>
