@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assetes/jc-animation.css">
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    /* 动画分析过程：
+        1.分析动画运动轨迹，运动现象
+        2.想一下那些css属性可以实现这样的效果
+        3.规矩轨迹变化，进行百分比划分（不一定等分）
+            划分方式：找到几个特点的【峰值】，在峰值与峰值之间进行划分
+        4.在每个不同的百分比区间更改属性的值
+        5.如果是渐进式的：值越来越小，知道回到初始状态
+
+        动画运动轨迹：
+        常用的： 平移 旋转 拉伸 ；显示隐藏  透明度
+    */
+</style>
+
+<!-- 动画库使用：
+        第一步：添加基础类，animated
+        第二步：添加动画，到以下网址查看案例 https://daneden.github.io/animate.css/ -->
+<body>
+    <h1>展示自己的动画样式</h1>
+    <h2 class="animation infinite bounce">bounce弹跳动画</h2>
+    <h2 class="animation flash delay-2s">flash闪烁动画</h2>
+    <h2 class="animation plues">plues的放大动画</h2>
+    <h2 class="animation pluesFont">pluesFont的放大动画</h2>
+    <h2 class="animation rubberBand">rubberBand的放大动画</h2>
+    <h2 class="animation shake">shake动画效果</h2>
+    <h2 class="animation swing">swing动画效果</h2>
+    <h2 class="animation graduallyPut">graduallyPut动画效果</h2>
+    <h2 class="animation turntable">turntable动画效果</h2>
+    <h2 class="animation infinite jello">jello动画效果</h2>
+    <h2 style="display: inline-block;" class="animation lightenOut">lightenOut动画效果</h2>
+    <h2 class="animation infinite inauguration">inauguration动画效果</h2>
+    <h2 class="animation heartBeat faster">heartBeat动画效果</h2>
+    <h2 class="animation bounceLeft">bounceLeft动画效果</h2>
+    <h2 class="animation bounceRight">bounceRight动画效果</h2>
+    <h2 class="animation bounceTop">bounceTop动画效果</h2>
+    <h2 class="animation bounceBottom">bounceBottom动画效果</h2>
+    <h2 class="animation bounceIn">bounceIn动画效果</h2>
+    <h2 class="animation fadeIn">fadeIn动画效果</h2>
+    <h2 class="animation bounceOut fast">bounceOut动画效果</h2>
+    <h2 class="animation bounceOutDown fast">bounceOutDown动画效果</h2>
+    <h2 class="animation bounceOutUp fast">bounceOutUp动画效果</h2>
+    <h2 class="animation bounceOutLeft">bounceOutLeft动画效果</h2>
+    <h2 class="animation bounceOutRight">bounceOutRight动画效果</h2>
+    <h2 class="animation fadeInDown">fadeInDown动画效果</h2>
+    <h2 class="animation fadeInDownBig">fadeInDownBig动画效果</h2>
+    <h2 class="animation fadeInLeft">fadeInLeft动画效果</h2>
+    <h2 class="animation fadeInLeftBig">fadeInLeftBig动画效果</h2>
+    <h2 class="animation fadeInRight">fadeInRight动画效果</h2>
+    <h2 class="animation fadeInRightBig">fadeInRightBig动画效果</h2>
+    <h2 class="animation fadeInUp">fadeInUp动画效果</h2>
+    <h2 class="animation fadeInUpBig">fadeInUpBig动画效果</h2>
+    <h2 class="animation flip">flip动画效果</h2>
+</body>
+</html>
